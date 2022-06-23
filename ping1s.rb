@@ -5,21 +5,21 @@
 class Ping1s < Formula
   desc "Now you can use ping1s, you can learn an ancient poem in 1 second, isn't it interesting!"
   homepage "https://github.com/youtiaoguagua/ping1s"
-  version "1.3.1"
+  version "1.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.1/ping1s_1.3.1_Darwin_arm64.tar.gz"
-      sha256 "6d3dd182e79630c8fee35b090f93a1a558021a5ec1bdd682379037a9460073a1"
+      url "https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.3/ping1s_1.3.3_Darwin_arm64.tar.gz"
+      sha256 "be4e8954faee6f027701e4f78abbe7a0c29dcaae42846a5a1d28dcfa06bc7380"
 
       def install
         bin.install "ping1s"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.1/ping1s_1.3.1_Darwin_x86_64.tar.gz"
-      sha256 "f1134cf323cd25f6055e2751403f36691328846d760aa80bfe3c987f5f9bf641"
+      url "https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.3/ping1s_1.3.3_Darwin_x86_64.tar.gz"
+      sha256 "57501a441805270df059983ab8778beb7eae6e7bcbd3c247e61cfdc34c1cd642"
 
       def install
         bin.install "ping1s"
@@ -29,16 +29,16 @@ class Ping1s < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.1/ping1s_1.3.1_Linux_arm64.tar.gz"
-      sha256 "dfe9a8dc6aabb45a863fa737752b3e18f7816c88fae76e5f93de0d6b693353bd"
+      url "https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.3/ping1s_1.3.3_Linux_arm64.tar.gz"
+      sha256 "48b773d24bd9056ef626e11fa14480a5a18d791b83897a8646eeb73818860f33"
 
       def install
         bin.install "ping1s"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.1/ping1s_1.3.1_Linux_x86_64.tar.gz"
-      sha256 "c953a9907089eb632720fda7c569145e7051459765da310d01eda9868bc59818"
+      url "https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.3/ping1s_1.3.3_Linux_x86_64.tar.gz"
+      sha256 "3b1b215fe78beca281837f3ffbbc37cbeb11d5ee0f7c0b1ca7f3e47fd8919906"
 
       def install
         bin.install "ping1s"
