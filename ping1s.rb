@@ -5,21 +5,21 @@
 class Ping1s < Formula
   desc "Now you can use ping1s, you can learn an ancient poem in 1 second, isn't it interesting!"
   homepage "https://github.com/youtiaoguagua/ping1s"
-  version "1.3.2"
+  version "1.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://ghproxy.com/https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.2/ping1s_1.3.2_Darwin_x86_64.tar.gz"
-      sha256 "aa8b976b4b57d4d8a44478435e28897f6ff6d8aefca82726c579cd689a4d4652"
+      url "https://ghproxy.com/https://github.com/youtiaoguagua/ping1s/releases/download/1.3.3/ping1s_1.3.3_Darwin_x86_64.tar.gz"
+      sha256 "38fea2368b24621def92011f251648588e2d288a40e39707ca689dd2744d1651"
 
       def install
         bin.install "ping1s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://ghproxy.com/https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.2/ping1s_1.3.2_Darwin_arm64.tar.gz"
-      sha256 "2609f92dd9e21f5953ae4090877f3c2155343b5630070ecc90a291af2a8d5e8a"
+      url "https://ghproxy.com/https://github.com/youtiaoguagua/ping1s/releases/download/1.3.3/ping1s_1.3.3_Darwin_arm64.tar.gz"
+      sha256 "fb7e45b8141ab56323d1e5de787639f091fe285264b2c90cb220bfe0dc19b9d2"
 
       def install
         bin.install "ping1s"
@@ -28,17 +28,17 @@ class Ping1s < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://ghproxy.com/https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.2/ping1s_1.3.2_Linux_x86_64.tar.gz"
-      sha256 "f3ab776237fabc968137fbd7e2e98982cb32059d648d521f6d4585165f2060e3"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://ghproxy.com/https://github.com/youtiaoguagua/ping1s/releases/download/1.3.3/ping1s_1.3.3_Linux_arm64.tar.gz"
+      sha256 "f8672c7fbe231bc4783bac7aea92dd49d8ac236dfe3d2914d040cd42805ec5d8"
 
       def install
         bin.install "ping1s"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://ghproxy.com/https://github.com/youtiaoguagua/ping1s/releases/download/v1.3.2/ping1s_1.3.2_Linux_arm64.tar.gz"
-      sha256 "228a3c26b69b27ba4070ceeac05fe27d33ce3b347793c3a84886d2dcf45b6169"
+    if Hardware::CPU.intel?
+      url "https://ghproxy.com/https://github.com/youtiaoguagua/ping1s/releases/download/1.3.3/ping1s_1.3.3_Linux_x86_64.tar.gz"
+      sha256 "f6748a4e43b02228b253368bca74e235f96e36bdd5258901debdc74ccb4df0ae"
 
       def install
         bin.install "ping1s"
